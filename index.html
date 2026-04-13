@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Governance Gazette — Policy. Power. Public Life. India's independent governance and civil services publication.">
+<meta name="keywords" content="UPSC, Civil Services, Governance, India, Policy, IAS, Current Affairs">
+<title>The Governance Gazette — Policy. Power. Public Life.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1209;
+    --ink-light: #3d3020;
+    --ink-muted: #6b5f50;
+    --ink-faint: #a89880;
+    --paper: #faf7f2;
+    --paper-off: #f2ede4;
+    --paper-ruled: #ede6d8;
+    --rule: #c8b99a;
+    --rule-light: #e0d5c0;
+    --accent: #8b1a1a;
+    --accent-light: #b52020;
+    --gold: #c8973a;
+    --col-width: 1200px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--accent); }
+  img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+  /* ── UTILITY ── */
+  .container { max-width: var(--col-width); margin: 0 auto; padding: 0 24px; }
+  .eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+    display: block;
+  }
+  .section-rule {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 28px 0 20px;
+  }
+  .section-rule::before, .section-rule::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+  .section-rule span {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    margin-bottom: 8px;
+  }
+  .tag-dark { background: var(--ink); color: var(--paper); }
+  .tag-accent { background: var(--accent); color: var(--paper); }
+  .tag-gold { background: var(--gold); color: var(--paper); }
+  .read-more {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 10px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+  .read-more:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ── TOP BAR ── */
+  .top-bar {
+    background: var(--ink);
+    color: var(--paper-off);
+    padding: 7px 0;
+    font-size: 11px;
+    letter-spacing: 0.03em;
+  }
+  .top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-bar a { color: var(--rule); transition: color 0.2s; margin-left: 16px; font-size: 11px; }
+  .top-bar a:hover { color: var(--paper); }
+  .top-bar-left { display: flex; align-items: center; gap: 16px; }
+  .top-bar-left span { color: var(--ink-faint); }
+  .top-weather { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--rule); }
+
+  /* ── MASTHEAD ── */
+  .masthead {
+    background: var(--paper);
+    border-bottom: 3px double var(--ink);
+    padding: 20px 0 14px;
+    text-align: center;
+  }
+  .masthead-inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+  .masthead-left { text-align: left; }
+  .masthead-left p { font-size: 11px; color: var(--ink-muted); line-height: 1.8; }
+  .masthead-center { }
+  .masthead-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 1;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .masthead-tagline {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-top: 6px;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .masthead-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .masthead-ornament::before, .masthead-ornament::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: var(--rule);
+  }
+  .masthead-ornament span { color: var(--gold); font-size: 14px; }
+  .masthead-right { text-align: right; }
+  .masthead-right p { font-size: 11px; color: var(--ink-muted); line-height: 1.8; }
+  .subscribe-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--paper) !important;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    margin-top: 8px;
+    transition: background 0.2s;
+  }
+  .subscribe-btn:hover { background: var(--accent-light); }
+  .masthead-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--rule-light);
+    margin-top: 12px;
+    padding-top: 8px;
+    font-size: 10px;
+    color: var(--ink-faint);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── NAV ── */
+  .nav-wrap {
+    background: var(--ink);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 18px;
+    color: #b0a090;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .nav a:hover, .nav a.active { color: var(--paper); border-bottom-color: var(--gold); }
+  .nav-search {
+    margin-left: auto;
+    padding: 13px 18px;
+    color: #b0a090;
+    cursor: pointer;
+    font-size: 13px;
+  }
+
+  /* ── BREAKING ── */
+  .breaking {
+    background: var(--accent);
+    color: var(--paper);
+    padding: 0;
+    overflow: hidden;
+  }
+  .breaking-inner {
+    display: flex;
+    align-items: stretch;
+  }
+  .breaking-label {
+    background: var(--ink);
+    color: var(--gold);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .breaking-ticker {
+    flex: 1;
+    overflow: hidden;
+    padding: 8px 16px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .ticker-inner {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 40s linear infinite;
+  }
+  @keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  /* ── MAIN CONTENT ── */
+  .main { padding: 28px 0; }
+
+  /* ── HERO GRID ── */
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 0;
+    border: 1px solid var(--rule);
+    margin-bottom: 28px;
+  }
+  .hero-lead {
+    padding: 28px;
+    border-right: 1px solid var(--rule);
+    position: relative;
+  }
+  .hero-lead-img {
+    width: 100%;
+    height: 280px;
+    background: var(--paper-ruled);
+    margin-bottom: 18px;
+    overflow: hidden;
+    position: relative;
+  }
+  .hero-lead-img-inner {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #2a1f0e 0%, #4a3520 40%, #2a1f0e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: #8a7560;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .img-caption { font-size: 11px; color: var(--ink-faint); font-style: italic; margin-top: -12px; margin-bottom: 16px; }
+  .hero-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.12;
+    margin-bottom: 12px;
+    color: var(--ink);
+  }
+  .hero-headline em { font-style: italic; font-weight: 400; }
+  .hero-subhead {
+    font-family: 'Source Serif 4', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: var(--ink-muted);
+    line-height: 1.55;
+    margin-bottom: 12px;
+    border-left: 3px solid var(--gold);
+    padding-left: 14px;
+  }
+  .byline {
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.04em;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--rule-light);
+  }
+  .byline strong { color: var(--ink-muted); font-weight: 600; }
+  .hero-body {
+    font-family: 'Source Serif 4', serif;
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--ink-light);
+  }
+  .hero-body p { margin-bottom: 12px; }
+  .hero-body p:last-child { margin-bottom: 0; }
+
+  /* Hero sidebar */
+  .hero-sidebar { display: flex; flex-direction: column; }
+  .hero-sidebar-top {
+    padding: 20px;
+    border-bottom: 1px solid var(--rule);
+    flex: 1;
+  }
+  .hero-sidebar-top h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+  .hero-sidebar-top p {
+    font-family: 'Source Serif 4', serif;
+    font-size: 13px;
+    color: var(--ink-muted);
+    line-height: 1.6;
+  }
+  .numbered-stories { }
+  .numbered-story {
+    display: flex;
+    gap: 14px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--rule-light);
+    align-items: flex-start;
+    transition: background 0.15s;
+  }
+  .numbered-story:last-child { border-bottom: none; }
+  .numbered-story:hover { background: var(--paper-off); }
+  .story-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--rule);
+    line-height: 1;
+    min-width: 28px;
+  }
+  .story-content h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 4px;
+  }
+  .story-content p { font-size: 11px; color: var(--ink-faint); }
+
+  /* ── THREE COL GRID ── */
+  .three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--rule);
+    border-top: none;
+    margin-bottom: 28px;
+  }
+  .col-story {
+    padding: 20px;
+    border-right: 1px solid var(--rule);
+    transition: background 0.15s;
+  }
+  .col-story:last-child { border-right: none; }
+  .col-story:hover { background: var(--paper-off); }
+  .col-img {
+    width: 100%;
+    height: 100px;
+    background: var(--paper-ruled);
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .col-img-inner {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1e2a1a 0%, #2d3d28 100%);
+  }
+  .col-img-inner.blue { background: linear-gradient(135deg, #1a1e2a 0%, #283040 100%); }
+  .col-img-inner.brown { background: linear-gradient(135deg, #2a1f10 0%, #3d2e18 100%); }
+  .col-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+  .col-body {
+    font-family: 'Source Serif 4', serif;
+    font-size: 13px;
+    color: var(--ink-muted);
+    line-height: 1.65;
+  }
+
+  /* ── CONTENT + SIDEBAR ── */
+  .content-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+
+  /* ── CIVIL SERVICES DESK ── */
+  .civil-desk {
+    border: 2px solid var(--ink);
+    padding: 24px;
+    margin-bottom: 0;
+  }
+  .civil-desk-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .civil-desk-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+  }
+  .civil-desk-sub {
+    font-size: 11px;
+    color: var(--ink-muted);
+    letter-spacing: 0.06em;
+    margin-top: 2px;
+  }
+  .civil-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .civil-story {
+    padding: 16px;
+    border-right: 1px solid var(--rule-light);
+    border-bottom: 1px solid var(--rule-light);
+    transition: background 0.15s;
+  }
+  .civil-story:hover { background: var(--paper-off); }
+  .civil-story:nth-child(2n) { border-right: none; }
+  .civil-story:nth-last-child(-n+2) { border-bottom: none; }
+  .civil-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+  .civil-body {
+    font-family: 'Source Serif 4', serif;
+    font-size: 12.5px;
+    color: var(--ink-muted);
+    line-height: 1.6;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar { display: flex; flex-direction: column; gap: 20px; }
+  .sidebar-widget {
+    border: 1px solid var(--rule);
+    padding: 18px;
+    background: var(--paper);
+  }
+  .widget-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink);
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .premium-widget {
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    padding: 20px;
+  }
+  .premium-widget .widget-title {
+    color: var(--gold);
+    border-bottom-color: var(--gold);
+  }
+  .premium-widget h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  .premium-widget p {
+    font-size: 12px;
+    color: #b0a090;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .premium-list { list-style: none; margin-bottom: 16px; }
+  .premium-list li {
+    font-size: 12px;
+    color: #c0b0a0;
+    padding: 4px 0;
+    border-bottom: 1px solid #2a2015;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .premium-list li::before { content: '→'; color: var(--gold); font-size: 10px; }
+  .premium-cta {
+    display: block;
+    background: var(--accent);
+    color: var(--paper);
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: background 0.2s;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+  }
+  .premium-cta:hover { background: var(--accent-light); }
+  .history-widget blockquote {
+    font-family: 'Source Serif 4', serif;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.7;
+    color: var(--ink-muted);
+    border-left: 3px solid var(--gold);
+    padding-left: 14px;
+    margin-bottom: 8px;
+  }
+  .history-widget cite { font-size: 11px; color: var(--ink-faint); }
+  .weather-widget .temp {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .weather-widget .condition { font-size: 13px; color: var(--ink-muted); }
+  .weather-widget .city { font-size: 11px; color: var(--ink-faint); margin-bottom: 12px; }
+  .weather-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--ink-muted);
+    padding: 4px 0;
+    border-top: 1px solid var(--rule-light);
+  }
+  .market-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--rule-light);
+    font-size: 12px;
+  }
+  .market-row:last-child { border-bottom: none; }
+  .market-name { font-weight: 500; }
+  .market-val { font-family: 'DM Sans', sans-serif; }
+  .up { color: #1a6b1a; font-weight: 600; }
+  .down { color: var(--accent); font-weight: 600; }
+
+  /* ── OPINION STRIP ── */
+  .opinion-strip {
+    background: var(--paper-ruled);
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 20px 0;
+    margin-bottom: 28px;
+  }
+  .opinion-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .opinion-card { display: flex; gap: 14px; align-items: flex-start; }
+  .opinion-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--ink);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--paper-off);
+  }
+  .opinion-text h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    line-height: 1.3;
+  }
+  .opinion-text .author { font-size: 11px; color: var(--ink-faint); margin-bottom: 4px; }
+  .opinion-text p { font-size: 12px; color: var(--ink-muted); font-style: italic; line-height: 1.5; }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--ink);
+    color: var(--paper-off);
+    padding: 40px 0 20px;
+    margin-top: 28px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #3a3020;
+  }
+  .footer-brand .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: var(--paper);
+    margin-bottom: 10px;
+  }
+  .footer-brand p {
+    font-size: 12px;
+    color: #8a7a68;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+  .footer-col h4 {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+  .footer-col a {
+    display: block;
+    font-size: 12px;
+    color: #8a7a68;
+    padding: 4px 0;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--paper); }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #5a4e40;
+  }
+
+  /* ── MODAL (Subscribe) ── */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--paper);
+    max-width: 480px;
+    width: 90%;
+    padding: 36px;
+    position: relative;
+  }
+  .modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--ink-muted);
+  }
+  .modal h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .modal .subtitle { font-size: 13px; color: var(--ink-muted); margin-bottom: 24px; font-style: italic; }
+  .modal-tier {
+    border: 1px solid var(--rule);
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .modal-tier.featured { border-color: var(--accent); border-width: 2px; }
+  .tier-name {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 4px;
+  }
+  .tier-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .tier-features { font-size: 12px; color: var(--ink-muted); line-height: 1.8; }
+  .modal-upi {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 16px;
+    text-align: center;
+    margin-top: 16px;
+  }
+  .modal-upi p { font-size: 12px; color: #8a7a68; margin-bottom: 6px; }
+  .modal-upi .upi-id { font-size: 16px; font-weight: 600; color: var(--gold); letter-spacing: 0.06em; }
+  .modal-upi .upi-note { font-size: 11px; color: #6a5a48; margin-top: 6px; }
+
+  /* ── SEARCH BAR ── */
+  .search-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 200;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 80px;
+  }
+  .search-overlay.open { display: flex; }
+  .search-box {
+    width: 90%;
+    max-width: 600px;
+    background: var(--paper);
+    display: flex;
+    align-items: center;
+  }
+  .search-box input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 18px 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--ink);
+    outline: none;
+  }
+  .search-box button {
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    padding: 18px 24px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  /* ── MOBILE ── */
+  @media (max-width: 900px) {
+    .masthead-inner { grid-template-columns: 1fr; text-align: center; }
+    .masthead-left, .masthead-right { display: none; }
+    .masthead-name { font-size: 38px; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-sidebar { border-top: 1px solid var(--rule); }
+    .three-col { grid-template-columns: 1fr; }
+    .col-story { border-right: none; border-bottom: 1px solid var(--rule); }
+    .content-sidebar { grid-template-columns: 1fr; }
+    .civil-grid { grid-template-columns: 1fr; }
+    .civil-story:nth-child(2n) { border-right: 1px solid var(--rule-light); }
+    .opinion-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .masthead-name { font-size: 28px; }
+    .hero-headline { font-size: 24px; }
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <span id="current-date">Monday, April 13, 2026</span>
+      <span>·</span>
+      <span>New Delhi, India</span>
+      <span>·</span>
+      <div class="top-weather">☀ 34°C · Partly Cloudy</div>
+    </div>
+    <div>
+      <a href="#" onclick="openSearch()">Search</a>
+      <a href="#" onclick="openSubscribe()">Subscribe</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="container">
+    <div class="masthead-inner">
+      <div class="masthead-left">
+        <p>Vol. I &nbsp;·&nbsp; No. 1<br>Est. April 2026<br>New Delhi</p>
+      </div>
+      <div class="masthead-center">
+        <div class="masthead-name">The Governance Gazette</div>
+        <div class="masthead-tagline">Policy &nbsp;·&nbsp; Power &nbsp;·&nbsp; Public Life</div>
+        <div class="masthead-ornament"><span>✦</span></div>
+      </div>
+      <div class="masthead-right">
+        <p>Free to read<br>Civil Services Desk: ₹29/week<br>Independent Publication</p>
+        <a href="#" class="subscribe-btn" onclick="openSubscribe()">Subscribe Now</a>
+      </div>
+    </div>
+    <div class="masthead-bottom">
+      <span>India's independent governance &amp; civil services publication</span>
+      <span id="bottom-date">Monday, April 13, 2026</span>
+      <span>thegovernancegazette.github.io</span>
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<div class="nav-wrap">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="governance.html">Governance</a>
+      <a href="economy.html">Economy</a>
+      <a href="foreign-policy.html">Foreign Policy</a>
+      <a href="environment.html">Environment</a>
+      <a href="civil-services.html">Civil Services Desk</a>
+      <a href="editorials.html">Editorials</a>
+      <a href="gs-digest.html">GS Digest</a>
+      <a href="answer-writing.html">Answer Writing</a>
+      <span class="nav-search" onclick="openSearch()">⌕</span>
+    </nav>
+  </div>
+</div>
+
+<!-- BREAKING NEWS -->
+<div class="breaking">
+  <div class="container" style="padding:0 24px;">
+    <div class="breaking-inner">
+      <div class="breaking-label">Breaking</div>
+      <div class="breaking-ticker">
+        <span class="ticker-inner">
+          Cabinet approves Major Port Authorities Amendment Bill &nbsp;|&nbsp;
+          Supreme Court upholds validity of PMLA amendments &nbsp;|&nbsp;
+          India forex reserves touch $650 billion mark &nbsp;|&nbsp;
+          Draft Digital Competition Bill open for public comment &nbsp;|&nbsp;
+          RBI announces revised Liquidity Coverage Ratio framework &nbsp;|&nbsp;
+          India-ASEAN FTA review enters critical phase &nbsp;|&nbsp;
+          15th Finance Commission devolution formula sparks southern states debate
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+  <div class="container">
+
+    <!-- HERO SECTION -->
+    <div class="section-rule"><span>Top Stories</span></div>
+
+    <div class="hero-grid">
+      <!-- Lead Story -->
+      <article class="hero-lead">
+        <span class="eyebrow">Governance · Centre-State Relations</span>
+        <div class="hero-lead-img">
+          <div class="hero-lead-img-inner">Photograph: Parliament of India</div>
+        </div>
+        <p class="img-caption">The Parliament of India — where the Finance Commission's recommendations will be tabled next session.</p>
+        <h1 class="hero-headline">15th Finance Commission's Devolution Formula Sparks <em>Fresh Debate</em> Among Southern States</h1>
+        <p class="hero-subhead">Four states formally write to the Union Finance Ministry seeking a review of the vertical devolution ratio, citing demographic performance penalties.</p>
+        <p class="byline">By <strong>The Governance Gazette Desk</strong> &nbsp;·&nbsp; April 13, 2026 &nbsp;·&nbsp; 6 min read</p>
+        <div class="hero-body">
+          <p>The ongoing tussle between the Union government and southern states over horizontal tax devolution has intensified, with Tamil Nadu, Kerala, Karnataka and Telangana jointly submitting a memorandum seeking reconsideration of population-based weightage criteria.</p>
+          <p>Their core argument: states that performed well on demographic indicators are being penalised because the formula uses 2011 Census population data as a weightage criterion — a structural tension in India's cooperative federalism architecture.</p>
+          <p>The Finance Commission, constituted under Article 280 of the Constitution, is mandated to recommend the distribution of tax revenues between the Union and the states. The 15th Commission, headed by N.K. Singh, set the vertical devolution at 41%.</p>
+        </div>
+        <a href="article-finance-commission.html" class="read-more">Continue Reading →</a>
+      </article>
+
+      <!-- Right sidebar stories -->
+      <div class="hero-sidebar">
+        <div class="hero-sidebar-top">
+          <span class="eyebrow">Editor's Pick</span>
+          <h3>Anti-Defection Law at 40: Has the Tenth Schedule Failed Indian Democracy?</h3>
+          <p>A deep examination of how the 1985 amendment meant to curb floor-crossing has itself become a tool of political manipulation in state legislatures.</p>
+          <a href="article-anti-defection.html" class="read-more">Read Analysis →</a>
+        </div>
+        <div class="numbered-stories">
+          <div class="numbered-story">
+            <div class="story-num">1</div>
+            <div class="story-content">
+              <h4>RBI's New Liquidity Framework: What It Means for Indian Banks</h4>
+              <p>Economy · 5 min read</p>
+            </div>
+          </div>
+          <div class="numbered-story">
+            <div class="story-num">2</div>
+            <div class="story-content">
+              <h4>Draft National Forest Policy 2026: Five Key Changes Explained</h4>
+              <p>Environment · 4 min read</p>
+            </div>
+          </div>
+          <div class="numbered-story">
+            <div class="story-num">3</div>
+            <div class="story-content">
+              <h4>India-ASEAN FTA Review: Where Negotiations Stand Today</h4>
+              <p>Foreign Policy · 6 min read</p>
+            </div>
+          </div>
+          <div class="numbered-story">
+            <div class="story-num">4</div>
+            <div class="story-content">
+              <h4>How PMLA Amendments Expand ED's Powers: A Legal Primer</h4>
+              <p>Governance · 7 min read</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THREE COLUMN STORIES -->
+    <div class="three-col">
+      <article class="col-story">
+        <span class="eyebrow">Economy</span>
+        <div class="col-img"><div class="col-img-inner blue"></div></div>
+        <h3 class="col-headline">India's Current Account Deficit Narrows to 0.9% of GDP in Q3</h3>
+        <p class="col-body">Services exports and remittance inflows cushion the trade deficit as merchandise exports remain under pressure from global demand slowdown.</p>
+        <a href="#" class="read-more">Read More →</a>
+      </article>
+      <article class="col-story">
+        <span class="eyebrow">Environment</span>
+        <div class="col-img"><div class="col-img-inner"></div></div>
+        <h3 class="col-headline">Draft National Forest Policy 2026: Five Changes Every Citizen Must Know</h3>
+        <p class="col-body">The revised policy introduces community forest management boards and strengthens gram sabha rights over forest land diversion decisions.</p>
+        <a href="#" class="read-more">Read More →</a>
+      </article>
+      <article class="col-story">
+        <span class="eyebrow">Foreign Policy</span>
+        <div class="col-img"><div class="col-img-inner brown"></div></div>
+        <h3 class="col-headline">India-ASEAN Free Trade Agreement Review: A Critical Juncture</h3>
+        <p class="col-body">Negotiations enter a critical phase as India seeks improved market access for services while ASEAN pushes for tariff concessions on goods.</p>
+        <a href="#" class="read-more">Read More →</a>
+      </article>
+    </div>
+
+    <!-- OPINION STRIP -->
+    <div class="opinion-strip">
+      <div class="container">
+        <div class="section-rule"><span>Opinion &amp; Analysis</span></div>
+        <div class="opinion-grid">
+          <div class="opinion-card">
+            <div class="opinion-avatar">A</div>
+            <div class="opinion-text">
+              <h4>Why India's Federal Structure Needs a Fundamental Rethink</h4>
+              <p class="author">Analysis · The Governance Gazette</p>
+              <p>"Cooperative federalism cannot survive when the Centre holds all fiscal cards and states are left bargaining at the table."</p>
+            </div>
+          </div>
+          <div class="opinion-card">
+            <div class="opinion-avatar">B</div>
+            <div class="opinion-text">
+              <h4>The Slow Death of Parliamentary Debate in India</h4>
+              <p class="author">Commentary · The Governance Gazette</p>
+              <p>"When bills pass in minutes and question hour is routinely disrupted, something essential about democracy erodes."</p>
+            </div>
+          </div>
+          <div class="opinion-card">
+            <div class="opinion-avatar">C</div>
+            <div class="opinion-text">
+              <h4>Digital Public Infrastructure: India's Greatest Export?</h4>
+              <p class="author">Perspective · The Governance Gazette</p>
+              <p>"From UPI to ONDC, India's DPI stack is being adopted by nations that once dismissed us as a developing economy."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENT + SIDEBAR -->
+    <div class="content-sidebar">
+
+      <!-- Civil Services Desk -->
+      <div>
+        <div class="civil-desk">
+          <div class="civil-desk-header">
+            <div>
+              <div class="civil-desk-title">The Collector's Corner</div>
+              <div class="civil-desk-sub">Civil Services Desk — UPSC Analysis, GS Digest, Answer Writing</div>
+            </div>
+            <span class="tag tag-gold">Free + Premium</span>
+          </div>
+          <div class="civil-grid">
+            <article class="civil-story">
+              <span class="tag tag-dark">GS2 · Polity</span>
+              <h4 class="civil-headline">Anti-Defection Law: Complete Tenth Schedule Breakdown with PYQs</h4>
+              <p class="civil-body">Grounds for disqualification, merger exceptions, Speaker's role, Kihoto Hollohan case, and probable Mains question patterns for 2026.</p>
+              <a href="#" class="read-more">Read Article →</a>
+            </article>
+            <article class="civil-story">
+              <span class="tag tag-dark">GS3 · Economy</span>
+              <h4 class="civil-headline">Fiscal Federalism in India: Every Concept an Aspirant Must Master</h4>
+              <p class="civil-body">Finance Commission, FRBM Act, vertical and horizontal devolution, grants-in-aid — a complete conceptual map with PYQ linkages 2018–2024.</p>
+              <a href="#" class="read-more">Read Article →</a>
+            </article>
+            <article class="civil-story">
+              <span class="tag tag-accent">Premium · Current Affairs</span>
+              <h4 class="civil-headline">Weekly Current Affairs Digest: April 7–13, 2026</h4>
+              <p class="civil-body">Curated, UPSC-filtered news with GS paper tagging, static-dynamic linkages, editorial angles, and answer framework hints. Full version for subscribers.</p>
+              <a href="#" class="read-more" onclick="openSubscribe()">Unlock Premium →</a>
+            </article>
+            <article class="civil-story">
+              <span class="tag tag-dark">Answer Writing</span>
+              <h4 class="civil-headline">Model Answer: "Critically Examine India's Federal Structure" — 250 Words</h4>
+              <p class="civil-body">A structured model answer with introduction, body, conclusion, examiner keywords, and AIR 47 qualifier's review notes attached.</p>
+              <a href="#" class="read-more">Read Article →</a>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+
+        <!-- Premium Box -->
+        <div class="sidebar-widget premium-widget">
+          <div class="widget-title">Civil Services Desk — Premium</div>
+          <h3>Unlock The Collector's Corner</h3>
+          <p>Full weekly current affairs PDF, GS-tagged analysis, answer frameworks, and editorial breakdowns — every week.</p>
+          <ul class="premium-list">
+            <li>Weekly Current Affairs PDF</li>
+            <li>GS Paper-wise tagging</li>
+            <li>Answer writing models</li>
+            <li>PYQ pattern analysis</li>
+            <li>Editorial breakdowns</li>
+          </ul>
+          <button class="premium-cta" onclick="openSubscribe()">Subscribe — ₹29 / Week</button>
+        </div>
+
+        <!-- Markets -->
+        <div class="sidebar-widget">
+          <div class="widget-title">Markets</div>
+          <div class="market-row"><span class="market-name">Sensex</span><span class="market-val up">▲ 74,382 (+0.4%)</span></div>
+          <div class="market-row"><span class="market-name">Nifty 50</span><span class="market-val up">▲ 22,519 (+0.3%)</span></div>
+          <div class="market-row"><span class="market-name">USD/INR</span><span class="market-val down">▼ 83.42</span></div>
+          <div class="market-row"><span class="market-name">Gold</span><span class="market-val up">▲ ₹72,840/10g</span></div>
+          <div class="market-row"><span class="market-name">Crude Oil</span><span class="market-val down">▼ $82.10/bbl</span></div>
+        </div>
+
+        <!-- Today in History -->
+        <div class="sidebar-widget history-widget">
+          <div class="widget-title">Today in History</div>
+          <blockquote>"On this day in 1919, the Jallianwala Bagh massacre took place in Amritsar — a defining moment in India's independence movement and the conscience of the British Empire."</blockquote>
+          <cite>— April 13, 1919</cite>
+        </div>
+
+        <!-- Weather -->
+        <div class="sidebar-widget weather-widget">
+          <div class="widget-title">New Delhi</div>
+          <div class="temp">34°C</div>
+          <div class="condition">Partly Cloudy</div>
+          <div class="city">New Delhi, India · April 13, 2026</div>
+          <div class="weather-row"><span>Humidity</span><span>28%</span></div>
+          <div class="weather-row"><span>Wind</span><span>12 km/h NW</span></div>
+          <div class="weather-row"><span>AQI</span><span>Moderate (112)</span></div>
+        </div>
+
+      </aside>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">The Governance Gazette</div>
+        <p>An independent publication covering governance, policy, economy and public affairs in India. Home to The Collector's Corner — a dedicated Civil Services Desk for UPSC aspirants.</p>
+        <p style="font-size:11px;color:#5a4e40;">© 2026 The Governance Gazette. All rights reserved.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sections</h4>
+        <a href="#">Governance</a>
+        <a href="#">Economy</a>
+        <a href="#">Foreign Policy</a>
+        <a href="#">Environment</a>
+        <a href="#">Editorials</a>
+      </div>
+      <div class="footer-col">
+        <h4>Civil Services</h4>
+        <a href="#">The Collector's Corner</a>
+        <a href="#">GS Digest</a>
+        <a href="#">Answer Writing</a>
+        <a href="#">Current Affairs</a>
+        <a href="#">PYQ Analysis</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="#">Subscribe</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Telegram Channel</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>The Governance Gazette · Policy. Power. Public Life.</span>
+      <span>Built with purpose. Independent always.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- SUBSCRIBE MODAL -->
+<div class="modal-overlay" id="subscribeModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeSubscribe()">✕</button>
+    <h2>Subscribe to The Gazette</h2>
+    <p class="subtitle">Choose your access level below</p>
+    <div class="modal-tier">
+      <div class="tier-name">Free Forever</div>
+      <div class="tier-price">₹0</div>
+      <div class="tier-features">✓ All governance, economy &amp; policy articles<br>✓ Opinion &amp; analysis<br>✓ Breaking news ticker<br>✓ Free Civil Services Desk previews</div>
+    </div>
+    <div class="modal-tier featured">
+      <div class="tier-name">Civil Services Desk — Premium</div>
+      <div class="tier-price">₹29 <span style="font-size:14px;font-weight:400;color:var(--ink-muted)">/ week</span></div>
+      <div class="tier-features">✓ Everything in Free<br>✓ Full Weekly Current Affairs PDF<br>✓ GS paper-wise tagged analysis<br>✓ Answer writing model answers<br>✓ PYQ pattern breakdown<br>✓ Editorial deep-dives</div>
+    </div>
+    <div class="modal-upi">
+      <p>Pay via UPI and WhatsApp us your screenshot</p>
+      <div class="upi-id">yourname@upi</div>
+      <div class="upi-note">WhatsApp: +91-XXXXXXXXXX · You'll receive your PDF within 2 hours</div>
+    </div>
+  </div>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="searchOverlay" onclick="closeSearch(event)">
+  <div class="search-box">
+    <input type="text" placeholder="Search The Governance Gazette..." id="searchInput" />
+    <button>Search</button>
+  </div>
+</div>
+
+<script>
+  // Set current date
+  const now = new Date();
+  const opts = { weekday:'long', year:'numeric', month:'long', day:'numeric' };
+  const dateStr = now.toLocaleDateString('en-IN', opts);
+  document.getElementById('current-date').textContent = dateStr;
+  document.getElementById('bottom-date').textContent = dateStr;
+
+  // Modal controls
+  function openSubscribe() {
+    document.getElementById('subscribeModal').classList.add('open');
+  }
+  function closeSubscribe() {
+    document.getElementById('subscribeModal').classList.remove('open');
+  }
+  document.getElementById('subscribeModal').addEventListener('click', function(e) {
+    if (e.target === this) closeSubscribe();
+  });
+
+  // Search controls
+  function openSearch() {
+    document.getElementById('searchOverlay').classList.add('open');
+    setTimeout(() => document.getElementById('searchInput').focus(), 100);
+  }
+  function closeSearch(e) {
+    if (e.target === document.getElementById('searchOverlay')) {
+      document.getElementById('searchOverlay').classList.remove('open');
+    }
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeSubscribe();
+      document.getElementById('searchOverlay').classList.remove('open');
+    }
+  });
+</script>
+</body>
+</html>
