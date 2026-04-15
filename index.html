@@ -822,263 +822,59 @@
     .footer-grid { grid-template-columns: 1fr; }
   }
   @media (max-width: 768px) {
+
+  /* Fix nav truncation — make it swipeable */
+  nav, .main-nav, nav ul, nav > div {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+  }
+  nav a, .nav-inner a, nav ul li, nav ul li a {
+    white-space: nowrap !important;
+    flex-shrink: 0;
+  }
+
+  /* Reduce hero headline size */
+  h1 {
+    font-size: 28px !important;
+    line-height: 1.1 !important;
+  }
+
+  /* Fix hero image height */
+  .hero-lead-img, .hero-lead-img img {
+    height: auto !important;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+
+  /* Stack hero grid — left and right columns on top of each other */
+  .hero-grid, .top-stories-wrap > div:first-child {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Stack three column stories */
+  .three-col {
+    display: block !important;
+  }
+  .three-col article, .col-story {
+    border-right: none !important;
+    border-bottom: 1px solid #ddd;
+    width: 100% !important;
+  }
+
+  /* Breaking ticker fix */
+  .ticker-wrap, .breaking-bar, .ticker {
+    overflow: hidden !important;
+    white-space: nowrap !important;
+  }
+
+  /* General spacing tightening */
   body {
     overflow-x: hidden;
-  }
-
-  .container,
-  .site-wrap,
-  .page-wrap,
-  .top-bar,
-  .masthead,
-  .nav-inner,
-  .main-content {
-    max-width: 100%;
-  }
-
-  /* Top utility bar */
-  .top-bar {
-    padding: 10px 14px;
-  }
-
-  .top-bar-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 16px;
-    align-items: start;
-  }
-
-  .top-bar-left,
-  .top-bar-center,
-  .top-bar-right,
-  .weather-block,
-  .location-block {
-    font-size: 13px;
-    line-height: 1.45;
-  }
-
-  /* Hide least important utility links on phone */
-  .top-bar-right {
-    display: none;
-  }
-
-  /* Masthead */
-  .masthead {
-    padding: 26px 16px 18px;
-  }
-
-  .masthead-left,
-  .masthead-right {
-    display: none;
-  }
-
-  .logo {
-    font-size: 44px;
-    line-height: 0.95;
-    text-align: center;
-  }
-
-  .tagline,
-  .masthead-sub,
-  .publication-meta {
-    font-size: 12px;
-    letter-spacing: 0.18em;
-    text-align: center;
-  }
-
-  .masthead-divider {
-    margin: 18px auto;
-  }
-
-  /* Navigation */
-  .main-nav {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    white-space: nowrap;
-    scrollbar-width: none;
-  }
-
-  .main-nav::-webkit-scrollbar {
-    display: none;
-  }
-
-  .nav-inner {
-    display: flex;
-    gap: 22px;
-    padding: 0 14px;
-    min-width: max-content;
-  }
-
-  .nav-inner a {
-    font-size: 14px;
-    padding: 14px 0;
-    white-space: nowrap;
-  }
-
-  /* Breaking strip */
-  .breaking-bar {
-    display: flex;
-    align-items: stretch;
-    min-height: 46px;
-  }
-
-  .breaking-label {
-    font-size: 12px;
-    padding: 12px 14px;
-    white-space: nowrap;
-  }
-
-  .ticker {
-    font-size: 14px;
-    padding: 12px 14px;
-    overflow: hidden;
-  }
-
-  /* Top stories heading */
-  .section-title,
-  .top-stories-title {
-    font-size: 12px;
-    letter-spacing: 0.22em;
-    margin: 28px 0 18px;
-  }
-
-  /* Hero area */
-  .hero-grid,
-  .top-stories-grid,
-  .lead-grid {
-    display: block;
-  }
-
-  .hero-lead {
-    border-right: none;
-    padding: 18px 14px 22px;
-  }
-
-  .hero-sidebar {
-    border-top: 1px solid var(--rule);
-    padding: 18px 14px 0;
-  }
-
-  .hero-lead-img {
-    height: auto;
-    margin-bottom: 12px;
-  }
-
-  .hero-lead-img img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-  }
-
-  .img-caption {
-    margin-top: 8px !important;
-    margin-bottom: 14px;
-    font-size: 12px;
-    line-height: 1.5;
-  }
-
-  .hero-headline {
-    font-size: 28px;
-    line-height: 1.08;
-    margin-bottom: 12px;
-  }
-
-  .hero-standfirst {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 12px;
-  }
-
-  .byline {
-    font-size: 12px;
-    line-height: 1.5;
-    margin-bottom: 16px;
-  }
-
-  .hero-body p {
-    font-size: 17px;
-    line-height: 1.75;
-    margin-bottom: 14px;
-  }
-
-  /* Editor's pick */
-  .hero-sidebar-top h3 {
-    font-size: 22px;
-    line-height: 1.15;
-  }
-
-  .hero-sidebar-top p {
-    font-size: 16px;
-    line-height: 1.65;
-  }
-
-  .hero-sidebar-top img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-  }
-
-  /* Numbered stories */
-  .numbered-story {
-    padding: 16px 0;
-  }
-
-  .story-content h4 {
-    font-size: 18px;
-    line-height: 1.25;
-  }
-
-  /* Three-column stories */
-  .three-col {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .col-story {
-    border-right: none;
-    border-bottom: 1px solid var(--rule);
-    padding: 18px 14px;
-  }
-
-  .col-img {
-    height: auto;
-    margin-bottom: 12px;
-  }
-
-  .col-img img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-  }
-
-  .col-headline {
-    font-size: 24px;
-    line-height: 1.15;
-  }
-
-  .col-body {
-    font-size: 16px;
-    line-height: 1.65;
-  }
-
-  /* Lower sections */
-  .content-sidebar {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .sidebar {
-    margin-top: 8px;
-  }
-
-  .sidebar-widget,
-  .collector-section,
-  .markets-widget,
-  .history-widget {
-    padding: 18px 14px;
   }
 }
 </style>
